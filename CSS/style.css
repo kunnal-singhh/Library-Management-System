@@ -7,25 +7,26 @@ header{
     display: flex;
     justify-content: space-around;
     height: 4rem;
+    
 }
 a{ 
     text-decoration: none;
 }
 .logo img{ 
     margin-top: .4rem;
-    margin-left: -12rem;
+    margin-left: -13rem;
     width: 10rem;
-   
 }
 .nav{ 
     margin-top: 1.5rem;
-    margin-right: -20rem;
+    margin-right: -27rem;
     color: white;
+    font-size: large;
 }
 .srchBox{ 
     width: 15rem;
     height: 1.6rem;
-    margin-right: -30rem;
+    margin-right: -31rem;
     margin-top: 1.2rem;
     border-radius: 15px;
     border: 0px solid black;
@@ -34,13 +35,14 @@ a{
     padding-left: 2em;
 }
 .bt1{ 
-    margin-right: -9rem;
+    font-size: .9rem;
+    margin-right: -12rem;
     height: 1.6rem;
     width: 5rem;
     margin-top: 1.2rem;
     border-radius: 15px;
     border: .5px solid rgb(67, 67, 255);
-    color: rgb(67, 67, 255);
+    color: navy;
     background-color: rgb(245, 245, 254);
 }
 p{ 
@@ -48,15 +50,81 @@ p{
 }
 .container{ 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-top: 1rem;
 }
 .generes{ 
-    border: 1px solid black;
+   border-radius: 10px;
     width: 15%;
-    height: 20rem;
+    height: 25rem;
+   box-shadow: 0 0 2px black;
 }
+
+.cat{ 
+    text-align: center;
+    border-bottom: 1px solid black;
+    height: 2rem;
+   margin-top: .5rem;
+}
+.catItem{ 
+    padding-top: 1rem;
+}
+.catItem li{ 
+   list-style-type: none;
+   text-align: center;
+   height: 2rem;
+}
+
 .books{ 
+   
+    width: 82%;
+    height:auto;
+    min-height: 43rem;
+    padding-bottom: 2rem;
+    /* border: 1px solid blue; */
+}
+
+.bookCat{ 
+   
+    margin-left: 3rem;
+}
+.bookList{ 
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+   flex-wrap: wrap;
+  /* border: 1px solid black; */
+    height: auto;
+    padding-bottom: 2rem;
+}
+.book-list-item{ 
+    padding: .5rem;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: 1px solid black;
-    width: 85%;
-    height: 30rem;
+     margin-left: 2rem; 
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+.book-list-item img{ 
+    width: 100%;
+    height: 75%;
+
+}
+.book-title{ 
+    margin-top: 1rem;
+    font-size: larger;
+}
+.book-price{ 
+    margin-top: .5rem;
+}
+footer{ 
+    text-align: center;
+    background-color: navy;
+    height: 2.5rem;
+    padding-top: 1.5rem;
+    color: white;
+   
 }
