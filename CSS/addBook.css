@@ -1,0 +1,83 @@
+*{ 
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", serif;
+}
+.head1{ 
+    font-family: "Merienda", serif;
+    text-align: center;
+    margin-top: 1rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .2rem 2rem .2rem 2rem;
+border-radius: 15px;
+    background-color:rgb(209, 209, 255) ;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.form{ 
+width: 30rem;
+height: 13rem;
+margin-left: auto;
+margin-right: auto;
+border-radius: 20px;
+border: 0px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 1.5rem;
+box-shadow: 0 0 5px  rgb(190, 190, 250);
+}
+.table{ 
+    width: 40rem;
+    height: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-top: 2rem;
+}
+label{ 
+    float:left;
+    font-size: 1.2rem;
+   
+}
+input,select{ 
+    float:right;
+    width: 15rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 0 0 2px rgb(80, 80, 255);
+   
+}
+.bt1{ 
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 0 0 2px rgb(144, 147, 236);
+    height: 2rem;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .2rem 2rem .2rem 2rem;
+border-radius: 15px;
+    background-color:navy ;
+    color: white;
+   margin-top: 1rem;
+}
+.head2{ 
+    font-family: "Merienda", serif;
+    text-align: center;
+    margin-top: 2rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .2rem 2rem .2rem 2rem;
+border-radius: 20px;
+    background-color:rgb(209, 209, 255) ;
+}
