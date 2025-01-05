@@ -4,7 +4,7 @@
     font-family: "Poppins", serif;
 }
 body{ 
-    
+    background-color: rgb(255, 254, 249);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -24,7 +24,7 @@ a{
     margin-top: .4rem;
     margin-left: -13rem;
     width: 10rem;
-    background-color: navy;
+    /* background-color: navy; */
 }
 .nav{ 
     margin-top: 1.4rem;
@@ -68,7 +68,7 @@ p{
     top: 5rem;
    border-radius: 10px;
     width: 15%;
-    height: 25rem;
+    height: 20rem;
    box-shadow: 0 0 5px rgb(190, 190, 250);
   position: sticky;
 }

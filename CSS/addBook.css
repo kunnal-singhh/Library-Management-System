@@ -12,13 +12,14 @@
     margin-right: auto;
     padding: .2rem 2rem .2rem 2rem;
 border-radius: 15px;
-    background-color:rgb(209, 209, 255) ;
+    background-color:rgb(42, 42, 82) ;
+    color: white;
 }
 .container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 .form{ 
 width: 30rem;
@@ -34,13 +35,14 @@ padding: 1.5rem;
 box-shadow: 0 0 5px  rgb(190, 190, 250);
 }
 .table{ 
-    width: 40rem;
-    height: 20rem;
+   min-width: 60%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
+    border-radius: 15px;
     border: 1px solid black;
     margin-top: 2rem;
+    padding: .5rem;
 }
 label{ 
     float:left;
@@ -50,7 +52,7 @@ label{
 input,select{ 
     float:right;
     width: 15rem;
-    height: 1.5rem;
+    height: 1.3rem;
     border-radius: 5px;
     border: 0px;
     box-shadow: 0 0 2px rgb(80, 80, 255);
@@ -79,5 +81,28 @@ border-radius: 15px;
     margin-right: auto;
     padding: .2rem 2rem .2rem 2rem;
 border-radius: 20px;
-    background-color:rgb(209, 209, 255) ;
+background-color:rgb(42, 42, 82) ;
+color: white;
+}
+
+.bookTable{ 
+
+text-align: center;
+width: 100%;
+}
+
+
+th{ 
+width: 20%;
+text-align: center;
+border-radius: 10px;
+padding: .3rem 1rem .3rem 1rem;
+background-color:rgb(209, 209, 255) ;
+}
+td{ 
+    width: 20%;
+    padding: .3rem .5rem .3rem .5rem;
+text-align: center;
+border-radius: 5px;
+box-shadow: 0 0 2px rgb(80, 80, 255);
 }
