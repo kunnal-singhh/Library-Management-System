@@ -3,6 +3,12 @@
     padding: 0px;
     font-family: "Poppins", serif;
 }
+body{ 
+    background-image: url(../Images/backgroud11.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 .head1{ 
     font-family: "Merienda", serif;
     text-align: center;
@@ -12,7 +18,7 @@
     margin-right: auto;
     padding: .2rem 2rem .2rem 2rem;
 border-radius: 15px;
-    background-color:rgb(42, 42, 82) ;
+    background-color:rgb(0, 93, 93); 
     color: white;
 }
 .container{
@@ -21,18 +27,32 @@ border-radius: 15px;
     justify-content: space-between;
     margin-top: 2rem;
 }
+.image{ 
+    float: left;
+    width: 33%;
+    
+}
 .form{ 
-width: 30rem;
+   
+
+width: 45rem;
 height: 13rem;
 margin-left: auto;
 margin-right: auto;
 border-radius: 20px;
 border: 0px;
 display: flex;
-flex-direction: column;
-justify-content: space-between;
+flex-direction: row;
+
 padding: 1.5rem;
-box-shadow: 0 0 5px  rgb(190, 190, 250);
+box-shadow: 0 0 5px rgb(115, 255, 255);
+}
+.formEle{ 
+  width: 60%;
+  margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
 }
 .table{ 
    min-width: 60%;
@@ -40,9 +60,11 @@ box-shadow: 0 0 5px  rgb(190, 190, 250);
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
-    border: 1px solid black;
+    
     margin-top: 2rem;
     padding: .5rem;
+    box-shadow: 0 0 5px rgb(115, 255, 255);
+    
 }
 label{ 
     float:left;
@@ -51,7 +73,7 @@ label{
 }
 input,select{ 
     float:right;
-    width: 15rem;
+    width: 13rem;
     height: 1.3rem;
     border-radius: 5px;
     border: 0px;
@@ -61,14 +83,14 @@ input,select{
 .bt1{ 
     border-radius: 5px;
     border: 0px;
-    box-shadow: 0 0 2px rgb(144, 147, 236);
+    box-shadow: 0 0 2px black;
     height: 2rem;
     width: max-content;
     margin-left: auto;
     margin-right: auto;
     padding: .2rem 2rem .2rem 2rem;
 border-radius: 15px;
-    background-color:navy ;
+    background-color:teal ;
     color: white;
    margin-top: 1rem;
 }
@@ -81,7 +103,7 @@ border-radius: 15px;
     margin-right: auto;
     padding: .2rem 2rem .2rem 2rem;
 border-radius: 20px;
-background-color:rgb(42, 42, 82) ;
+ background-color:rgb(0, 93, 93); 
 color: white;
 }
 
@@ -97,12 +119,14 @@ width: 20%;
 text-align: center;
 border-radius: 10px;
 padding: .3rem 1rem .3rem 1rem;
-background-color:rgb(209, 209, 255) ;
+background-color:teal;
+color: white;
+font-weight: 600;
 }
 td{ 
     width: 20%;
     padding: .3rem .5rem .3rem .5rem;
 text-align: center;
 border-radius: 5px;
-box-shadow: 0 0 2px rgb(80, 80, 255);
+box-shadow: 0 0 2px rgb(83, 143, 143);
 }
