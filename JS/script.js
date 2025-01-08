@@ -33,7 +33,8 @@ function addBooks()
 }
 function getBooks()
 { 
-    return JSON.parse(localStorage.getItem("books")) || [];
+    const books=localStorage.getItem("books");
+    return books ? JSON.parse(books) : [];
 }
 function saveBooks(books)
 { 

@@ -9,32 +9,13 @@ function displayBooks(){
         books.forEach((book)=>{ console.log(book);
             var bookItem=document.createElement("div");
             bookItem.classList.add("book-list-item");
-           
-            //add book image
-            var img=document.createElement("img");
-            img.src=book.Image;
-            img.alt=book.Title;
-            //add book title 
-            var title=document.createElement("h3");
-            title.classList.add("book-title");
-            title.textContent=book.Title;
-            //add price
-            var price=document.createElement("h3");
-            price.classList.add("book-price");
-            price.innerHTML=`₹${book.Price}`;
-            // add buy tag
-            var buy=document.createElement("a");
-            buy.classList.add("buy");
-            buy.innerHTML="Buy Now";
-
-            console.log(book);
-            //append all elements
-            bookItem.appendChild(img);
-            bookItem.appendChild(title);
-            bookItem.appendChild(price);
-            bookItem.appendChild(buy);
-            bookList.appendChild(bookItem);
-            console.log(book);
+           bookItem.innerHTML=`
+           <img src="${book.Image}" alt="${book.title} cover">
+            <h3>${book.title}</h3>
+            <h3><strong>Price:</strong> ${book.Price}</h3>
+            <a class="buy">Buy Now</a>
+            `;
+          bookList.appendChild(bookItem);
         });
     }
 }
