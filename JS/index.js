@@ -11,8 +11,8 @@ function displayBooks(){
             bookItem.classList.add("book-list-item");
            bookItem.innerHTML=`
            <img src="${book.Image}" alt="${book.Title} cover">
-            <h3>${book.Title}</h3>
-            <h3><strong>Price:</strong> ${book.Price}</h3>
+            <h3 class="book-title">${book.Title}</h3>
+            <h3 class="book-price"><strong>Price:</strong> ${book.Price}</h3>
             <a class="buy">Buy Now</a>
             `;
           bookList.appendChild(bookItem);
