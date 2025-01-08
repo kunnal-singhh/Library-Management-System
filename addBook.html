@@ -25,23 +25,28 @@
                 <option>Fiction</option>
                 <option>Non-Fiction</option>
                 <option>Thriller</option>
+                <option>Self-help book</option>
                 <option>Romantic</option>
             </select></label>
            
-           <button class="bt1">Add Book</button>
+           <button class="bt1" onclick="addBooks()">Add Book</button>
            </div>
         </div>
         <h2 class="head2">Added Books</h2>
         <div class="table">
             <table class="bookTable">
-                <tr> 
-                    <th>Category</th>
-                    <th>Image</th>
-                    <th>Title</th>
-                    <th>Price</th>
-                    <th>Action</th>
-                </tr>
-                <tr>
+
+                <div class="book-table-head"> 
+                    <tr> 
+                        <th>Category</th>
+                        <th>Image</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </div>
+                <div class="book-table-data">
+                 <!-- <tr>
                     <td>kunal singh bhumihar</td>
                     <td>kunal singh bhumihar</td>
                     <td>kunal singh bhumihar</td>
@@ -54,9 +59,12 @@
                     <td>kunal singh bhumihar</td>
                     <td>kunal singh bhumihar</td>
                     <td>kunal singh bhumihar</td>
-                </tr>
+                </tr> -->
+                </div>
+               
             </table>
         </div>
     </div>
+    <script src="./JS/script.js"></script>
 </body>
 </html>
