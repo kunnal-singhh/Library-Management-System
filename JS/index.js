@@ -10,7 +10,7 @@ function displayBooks(){
             var bookItem=document.createElement("div");
             bookItem.classList.add("book-list-item");
            bookItem.innerHTML=`
-           <img src="${book.Image}" alt="${book.Titleitle} cover">
+           <img src="${book.Image}" alt="${book.Title} cover">
             <h3>${book.Title}</h3>
             <h3><strong>Price:</strong> ${book.Price}</h3>
             <a class="buy">Buy Now</a>
