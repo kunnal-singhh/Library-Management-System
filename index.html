@@ -16,7 +16,7 @@
       <a href="#" class="nav">Home</a>
       <a href="#" class="nav">Contact</a>
       <a href="#" class="nav">About Us</a>
-      <a href="#" class="nav">Login</a>
+      <a href="#"  id="login-link" onclick="popup()" class="nav">Login</a>
       <input type="text" placeholder="search books" class="srchBox" />
       <button class="bt1">Search</button>
     </header>
@@ -133,6 +133,32 @@
      
     </div>
     </div>
+    <div class="container2" id="container2"  style="display:none; border: 1px solid #ccc; width:300px; padding:20px; border-radius: 10px; 
+    position: absolute;  background-image:url('Library-Management-System\Images\backgroud11.png'); background-color: #f9f9f9; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin: 0 auto; top:10%;left:70%">
+   
+  <form id = "login" onsubmit="validatation()">
+
+          <h2 style=" text-align: center;">Login</h2>
+            <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required style=" width: 100%;  padding: 10px; margin-bottom: 10px;border: 1px solid #ccc;  border-radius: 4px;">
+              
+               
+                
+              
+                <span id="usernameError" class="error"></span>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required style=" width: 100%;  padding: 10px; margin-bottom: 10px;border: 1px solid #ccc;  border-radius: 4px;">
+                <span id="passwordError" class="error"></span>
+            </div>
+            <button type="submit" onsubmit="addBook()" style="  padding: 10px 20px; background-color: #4CAF50; color: white;  border: none;border-radius: 4px;
+            cursor: pointer;">Login</button>
+           
+          </form>
+        </div>
+
     <footer>&copy;2024 Harsh | Kunal</footer>
     <script src="./JS/index.js"></script>
   </body>
