@@ -64,7 +64,7 @@ box-shadow: 0 0 5px rgb(115, 255, 255);
     margin-top: 2rem;
     padding: .5rem;
     box-shadow: 0 0 5px rgb(115, 255, 255);
-    
+    background-color: white;
 }
 label{ 
     float:left;
@@ -106,13 +106,19 @@ border-radius: 20px;
  background-color:rgb(0, 93, 93); 
 color: white;
 }
+::placeholder{ 
+    padding-left: .7rem;
+}
 
 .bookTable{ 
 
 text-align: center;
 width: 100%;
+background-color: white;
 }
-
+.book-table-head{ 
+    position: sticky;
+}
 
 th{ 
 width: 20%;
@@ -129,4 +135,37 @@ td{
 text-align: center;
 border-radius: 5px;
 box-shadow: 0 0 2px rgb(83, 143, 143);
+
+
 }
+td5{ 
+    height: auto;
+}
+.editAndDelete {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    gap: 1rem; /* Space between buttons */
+    width: auto;
+    min-height: 6rem;
+}
+
+.delete-button, .edit-button {
+    background-color: teal;
+    width: 4rem;
+    height: 2rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    font-size: larger;
+}
+.delete-button {
+    background-color: rgb(255, 92, 92);
+}
+

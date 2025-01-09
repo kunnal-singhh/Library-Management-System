@@ -18,8 +18,9 @@
             <img src="./Images/school-students-digital-art-style-education-day.jpg" class="image">
            <div class="formEle">
             <label>Title<input type="text" id="title"></label>
+            <label>Author<input type="text" id="author"></label>
             <label>Price<input type="number" id="price"></label>
-            <label>Image<input type="file" id="image"></label>
+            <label>Image<input type="text" id="image" placeholder="./images/xyzphoto.png"></label>
             <label>Category  <select id="category">
                 <option selected disabled>Select</option>
                 <option>Fiction</option>
@@ -36,16 +37,17 @@
         <div class="table">
             <table class="bookTable">
 
-                <div class="book-table-head"> 
+                <thead class="book-table-head"> 
                     <tr> 
                         <th>Category</th>
                         <th>Image</th>
                         <th>Title</th>
+                        <th>Author</th>
                         <th>Price</th>
                         <th>Action</th>
                     </tr>
-                </div>
-                <div class="book-table-data">
+                </thead>
+                <tbody class="book-table-data">
                  <!-- <tr>
                     <td>kunal singh bhumihar</td>
                     <td>kunal singh bhumihar</td>
@@ -60,7 +62,7 @@
                     <td>kunal singh bhumihar</td>
                     <td>kunal singh bhumihar</td>
                 </tr> -->
-                </div>
+                </tbody>
                
             </table>
         </div>
