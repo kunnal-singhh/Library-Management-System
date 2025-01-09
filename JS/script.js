@@ -69,7 +69,8 @@ function displayTable() {
 
 
         const td5 = document.createElement("td");
-        td5.textContent = book.Price;
+        td5.classList.add("td5");
+        td5.textContent = `₹ ${book.Price}`;
 
         const td6 = document.createElement("td");
               td6.classList.add("editAndDelete");

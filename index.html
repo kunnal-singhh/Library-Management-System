@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/index.css" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -16,7 +19,7 @@
       <a href="#" class="nav">Home</a>
       <a href="#" class="nav">Contact</a>
       <a href="#" class="nav">About Us</a>
-      <a href="#"  id="login-link" onclick="popup()" class="nav">Login</a>
+      <a href="#" id="login-link" onclick="popup()" class="nav">Login</a>
       <input type="text" placeholder="search books" class="srchBox" />
       <button class="bt1">Search</button>
     </header>
@@ -24,16 +27,21 @@
       <div class="generes">
         <h2 class="cat">Category</h2>
         <div class="catItem">
-          <li>Fiction</li>
-          <li>Non-Fiction</li>
-          <li>Thrillers</li>
-          <li>Romantic</li>
+          <li><a>Fiction</a></li>
+          <li><a>Non-Fiction</a></li>
+          <li><a>Thrillers</a></li>
+          <li><a>Romantic</a></li>
+          <li><a>Horror</a></li>
+          <li><a>Self-help</a></li>
+          <li><a>Mystery</a></li>
+          <li><a>Biography</a></li>
+
         </div>
       </div>
       <div class="books">
         <h2 class="bookCat">Books</h2>
         <div class="bookList">
-           <!-- <div class="book-list-item">
+          <!-- <div class="book-list-item">
             <img src="./Images/location.png" />
             <h3 class="book-title">Book title</h3>
             <h2 class="book-author">Author</h2>
@@ -60,8 +68,6 @@
             <h3 class="book-title">Book title</h3>
             <h3 class="book-price">Price</h3>
           </div>  -->
-          
-         
         </div>
         <!-- non fiction
         <div class="book"> 
@@ -131,35 +137,80 @@
           </div>
        </div>
     </div>-->
-     
+      </div>
     </div>
-    </div>
-    <div class="container2" id="container2"  style="display:none; border: 1px solid #ccc; width:300px; padding:20px; border-radius: 10px; 
-    position: absolute;  background-image:url('Library-Management-System\Images\backgroud11.png'); background-color: #f9f9f9; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin: 0 auto; top:10%;left:70%">
-   
-  <form id = "login" onsubmit="validatation()">
+    <div
+      class="container2"
+      id="container2"
+      style="
+        display: none;
+        border: 1px solid #ccc;
+        width: 300px;
+        padding: 20px;
+        border-radius: 10px;
+        position: absolute;
+        background-image: url('Library-Management-System\Images\backgroud11.png');
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        top: 10%;
+        left: 70%;
+      "
+    >
+      <form id="login" onsubmit="validatation()">
+        <h2 style="text-align: center">Login</h2>
+        <div>
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            style="
+              width: 100%;
+              padding: 10px;
+              margin-bottom: 10px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+            "
+          />
 
-          <h2 style=" text-align: center;">Login</h2>
-            <div>
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required style=" width: 100%;  padding: 10px; margin-bottom: 10px;border: 1px solid #ccc;  border-radius: 4px;">
-              
-               
-                
-              
-                <span id="usernameError" class="error"></span>
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required style=" width: 100%;  padding: 10px; margin-bottom: 10px;border: 1px solid #ccc;  border-radius: 4px;">
-                <span id="passwordError" class="error"></span>
-            </div>
-            <button type="submit" onsubmit="addBook()" style="  padding: 10px 20px; background-color: #4CAF50; color: white;  border: none;border-radius: 4px;
-            cursor: pointer;">Login</button>
-           
-          </form>
+          <span id="usernameError" class="error"></span>
         </div>
-
+        <div>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            style="
+              width: 100%;
+              padding: 10px;
+              margin-bottom: 10px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+            "
+          />
+          <span id="passwordError" class="error"></span>
+        </div>
+        <button
+          type="submit"
+          onsubmit="addBook()"
+          style="
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          "
+        >
+          Login
+        </button>
+      </form>
+    </div>
+   
     <footer>&copy;2024 Harsh | Kunal</footer>
     <script src="./JS/index.js"></script>
   </body>

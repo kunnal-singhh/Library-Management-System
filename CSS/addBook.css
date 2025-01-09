@@ -32,6 +32,7 @@ border-radius: 15px;
     width: 33%;
     
 }
+
 .form{ 
    
 
@@ -79,6 +80,9 @@ input,select{
     border: 0px;
     box-shadow: 0 0 2px rgb(80, 80, 255);
    
+}
+option{ 
+    text-align: center;
 }
 .bt1{ 
     border-radius: 5px;
@@ -138,8 +142,9 @@ box-shadow: 0 0 2px rgb(83, 143, 143);
 
 
 }
-td5{ 
-    height: auto;
+.td5{ 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
 }
 .editAndDelete {
     display: flex;
