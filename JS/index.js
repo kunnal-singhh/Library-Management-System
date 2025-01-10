@@ -11,7 +11,7 @@ function displayBooks() {
         bookList.innerHTML = "<p>No books available</p>";
     } else {
         const fragment = document.createDocumentFragment();
-        books.forEach((book) => {
+        books.forEach((book,index) => {
             const bookItem = document.createElement("div");
             bookItem.classList.add("book-list-item");
             bookItem.innerHTML = `
@@ -19,14 +19,16 @@ function displayBooks() {
                 <h3 class="book-title">${book.Title}</h3>
                 <h2 class="book-author">> ${book.Author}</h2>
                 <h3 class="book-price"> ₹ ${book.Price}</h3>
-                <a class="buy">Buy Now</a>
+                <button class="borrow" >Borrow</button>
+                 
             `;
-            fragment.appendChild(bookItem);
+            fragment.appendChild(bookItem); 
+
         });
         bookList.appendChild(fragment); // Append all items at once
     }
+    
 }
-
 // function displayCategory() {
 //     const books = getBooks();
 //     const catList = document.querySelector(".catItem"); // Use querySelector for a single element
@@ -92,6 +94,33 @@ let password = document.getElementById('password');
             return false;
         }
     }
+    // function borrow(index){
+    //     window.open('../borrow.html');
+    //     const books=getBooks();
+    //     const borrowed=document.querySelector(".borrowed");
+    //     if(index){ 
+    //         console.error("borrowed book not found");
+    //         return;
+    //     }
+    //     borrowed.innerHTML="";
+    //     else{ 
+    //         const fragment = document.createDocumentFragment();
+             
+    //         const bookItem = document.createElement("div");
+    //         bookItem.classList.add("book-item");
+    //         bookItem.innerHTML = `
+    //             <img src="${books[index].Image}" alt="${books[index].Title} cover">
+    //             <h3 class="book-title">${books[index].Title}</h3>
+    //             <h2 class="book-author">> ${books[index].Author}</h2>
+    //             <h3 class="book-price"> ₹ ${books[index].Price}</h3>
+    //            <p class="borrowedMsg">You have borrowed the book</p>
+    //         `;
+    //         fragment.appendChild(bookItem);
+      
+
+    //     }
+       
+    // }
 
 // Call functions
 displayBooks();
