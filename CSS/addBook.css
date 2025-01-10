@@ -44,7 +44,7 @@ border-radius: 20px;
 border: 0px;
 display: flex;
 flex-direction: row;
-
+background-color: white;
 padding: 1.5rem;
 box-shadow: 0 0 5px rgb(115, 255, 255);
 }
