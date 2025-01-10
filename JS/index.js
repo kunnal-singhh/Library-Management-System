@@ -281,7 +281,7 @@ function displayBooks() {
 
 
 function getBooks() {
-  const books = localStorage.getItem("arr");
+  const books = localStorage.getItem("books");
   try {
     return books ? JSON.parse(books) : [];
   } catch (e) {

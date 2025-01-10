@@ -29,11 +29,17 @@ function addBooks()
    displayTable();
    
 }
-function getBooks()
-{ 
-    const books=localStorage.getItem("arr");
-    return books ? JSON.parse(books) : [];
-}
+ 
+    function getBooks() {
+        const books = localStorage.getItem("books");
+        try {
+          return books ? JSON.parse(books) : [];
+        } catch (e) {
+          console.error("Error parsing books from localStorage", e);
+          return [];
+        }
+      }
+
 function saveBooks(books)
 { 
     localStorage.setItem("books",JSON.stringify(books));
