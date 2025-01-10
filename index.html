@@ -14,14 +14,16 @@
     />
   </head>
   <body>
-    <header>
+    <header class="navbar">
       <a href="#" class="logo"><img src="./Images/libraryLogo.png" /></a>
-      <a href="#" class="nav">Home</a>
-      <a href="#" class="nav">Contact</a>
-      <a href="#" class="nav">About Us</a>
-      <a href="#" id="login-link" onclick="popup()" class="nav">Login</a>
-      <input type="text" placeholder="search books" class="srchBox" />
-      <button class="bt1">Search</button>
+      
+    <a href="#" class="nav">Home</a>
+    <a href="#" class="nav">Contact</a>
+    <a href="#" class="nav">About Us</a>
+    <a href="#" id="login-link" onclick="popup()" class="nav">Login</a>
+    <a href="#" id="manage"  class="hidden">Manage</a>
+    <input type="text" placeholder="search books" class="srchBox" />
+    <button class="bt1">Search</button>
     </header>
     <div class="container">
       <div class="generes">
@@ -194,7 +196,7 @@
           />
           <span id="passwordError" class="error"></span>
         </div>
-        <button
+        <button id="button"
           type="submit"
           onsubmit="addBook()"
           style="
@@ -206,7 +208,7 @@
             cursor: pointer;
           "
         >
-          Login
+          Submit
         </button>
       </form>
     </div>

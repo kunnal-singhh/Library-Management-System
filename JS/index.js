@@ -318,7 +318,7 @@ function validatation() {
 
   if (username.value === validUsername && password.value === validPassword) {
     alert("login successful");
-    window.open("../addBook.html");
+    // window.open("../addBook.html");
     return true;
   } else {
     alert("login failed");
@@ -351,3 +351,24 @@ function saveBorrowed(borrowed)
 // Call functions
 displayBooks();
 // displayCategory();
+
+const loginButton = document.getElementById('button');
+const manageOption = document.getElementById('manage');
+
+// Simulated login state
+let isAdmin = false;
+
+loginButton.addEventListener('click' , () => {
+  if(!isAdmin){
+    // Simulate admin login
+    isAdmin = true;
+    loginButton.textContent = 'Logout';
+    manageOption.classList.remove('hidden');
+  }
+  else{
+    // Simulate logout
+    isAdmin = false;
+    loginButton.textContent = 'Login';
+    manageOption.classList.add('hidden');
+  }
+});
