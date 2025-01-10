@@ -362,13 +362,19 @@ loginButton.addEventListener('click' , () => {
   if(!isAdmin){
     // Simulate admin login
     isAdmin = true;
-    loginButton.textContent = 'Logout';
+   // loginButton.textContent = 'Logout';
     manageOption.classList.remove('hidden');
   }
   else{
     // Simulate logout
     isAdmin = false;
-    loginButton.textContent = 'Login';
+   // loginButton.textContent = 'Login';
     manageOption.classList.add('hidden');
   }
+});
+
+const openBook=document.getElementById('manage');
+openBook.addEventListener('click', () =>{
+  window.location.href= "./addBook.html"
+
 });

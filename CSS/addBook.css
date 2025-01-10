@@ -174,3 +174,37 @@ box-shadow: 0 0 2px rgb(83, 143, 143);
     background-color: rgb(255, 92, 92);
 }
 
+.logout-container {
+    position: absolute;
+    margin-top: -5rem;
+    margin-left:1400px;
+   
+    text-align: center;
+    border-radius: 20px;
+    background-color:rgb(0, 93, 93); 
+    color: white;
+}
+   
+.logout-button {
+    font-family: "Merienda", serif;
+    width: fit-content;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color:rgb(0, 93, 93); 
+    border: none;
+     border-radius: 20px; 
+    cursor: pointer;
+    width: fit-content;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.logout-button:hover {
+    background-color: #011b1a;
+    transform: scale(1.1);
+}
+.logout-button:active {
+    transform: scale(1.05);
+}
+   
+    
+

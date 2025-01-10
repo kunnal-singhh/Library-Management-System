@@ -129,3 +129,8 @@ function editBook(index) {
     displayTable();
 }
 displayTable();
+
+const logout= document.getElementById('logout-button');
+logout.addEventListener('click',() => {
+    window.location.href= "./index.html" ;
+});
