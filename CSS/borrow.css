@@ -1,0 +1,68 @@
+*{ 
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", serif;
+}
+h1{ 
+    font-family: "Merienda", serif;
+    text-align: center;
+    margin-top: 1rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .2rem 2rem .2rem 2rem;
+border-radius: 15px;
+    background-color:rgb(0, 93, 93); 
+    color: white;
+}
+.borrowed{ 
+    display: flex;
+    gap: 1rem;
+   flex-wrap: wrap;
+   min-height: 25rem;
+   padding: 2rem;
+}
+.book-item{ 
+    padding: .7rem;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;
+    border: 1px solid rgb(135, 236, 202);
+    
+    border-radius: 10px;
+    
+   gap: .1rem;
+   min-height: 18rem;
+    background-color: white;
+}
+.book-item:hover{ 
+    box-shadow: 0 0 5px rgb(115, 255, 255);
+   }
+.book-item img{ 
+    width: 100%;
+    height: 60%;
+     box-shadow: 0 0 1px grey;
+}
+.book-title{ 
+    margin-top: .2rem;
+    font-size: 1rem;
+    width: 100%;
+    font-weight: 700;
+   color: navy;
+}
+.book-price{ 
+    width: 100%;
+    font-size: 1.2rem;
+   color: rgb(72, 128, 110);
+   font-family: 'Times New Roman', Times, serif;
+}
+.book-author{ 
+    font-size: 1rem;
+
+    font-weight: 400;
+}
+.borrowedMsg{ 
+ color:rgb(129, 8, 8);
+}
