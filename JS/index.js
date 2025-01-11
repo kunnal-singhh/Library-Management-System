@@ -427,3 +427,5 @@ function handleClick(event) {
 catItem.forEach(item => {
   item.addEventListener('click', handleClick);
 });
+
+

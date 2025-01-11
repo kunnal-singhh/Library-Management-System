@@ -4,15 +4,12 @@
     font-family: "Poppins", serif;
 }
 body{ 
-    background-image: url(../Images/backgroud11.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    background-color: white;
 }
 .head1{ 
     font-family: "Merienda", serif;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -25,7 +22,7 @@ border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 .image{ 
     float: left;
@@ -97,6 +94,9 @@ border-radius: 15px;
     background-color:teal ;
     color: white;
    margin-top: 1rem;
+}
+.bt1:hover{ 
+    background-color: rgb(2, 64, 64);
 }
 .head2{ 
     font-family: "Merienda", serif;
@@ -186,7 +186,7 @@ box-shadow: 0 0 2px rgb(83, 143, 143);
 }
    
 .logout-button {
-    font-family: "Merienda", serif;
+   
     width: fit-content;
     padding: 10px 20px;
     font-size: 16px;
@@ -199,7 +199,7 @@ box-shadow: 0 0 2px rgb(83, 143, 143);
     transition: background-color 0.3s, transform 0.2s;
 }
 .logout-button:hover {
-    background-color: #011b1a;
+    background-color: rgb(2, 64, 64);
     transform: scale(1.1);
 }
 .logout-button:active {

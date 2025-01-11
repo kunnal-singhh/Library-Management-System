@@ -79,6 +79,9 @@ a{
     margin-right: 3rem;
    
 }
+.bt1:hover{ 
+    background-color: rgb(2, 64, 64);
+}
 
 .container{ 
     display: flex;
@@ -208,6 +211,9 @@ a{
     border-radius: 10px;
     color: white;
     margin-top: .5rem;
+}
+.borrow:hover{ 
+    background-color: rgb(2, 64, 64);
 }
 
 footer{ 
