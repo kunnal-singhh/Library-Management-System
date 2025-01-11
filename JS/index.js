@@ -190,55 +190,140 @@ let arr = [
     Price: "950",
     Title: "Get Out of Your Head",
   },
-  // {
-  //     Author :
-  //     Category :
-  //     Image :
-  //     Price :
-  //     Title :
-  // },
-  // {
-  //     Author :
-  //     Category :
-  //     Image :
-  //     Price :
-  //     Title :
-  // },
-  // {
-  //     Author :
-  //     Category :
-  //     Image :
-  //     Price :
-  //     Title :
-  // },
-  // {
-  //     Author :
-  //     Category :
-  //     Image :
-  //     Price :
-  //     Title :
-  // },
-  // {
-  //     Author :
-  //     Category :
-  //     Image :
-  //     Price :
-  //     Title :
-  // },
-  // {
-  //     Author :
-  //     Category :
-  //     Image :
-  //     Price :
-  //     Title :
-  // },
-  // {
-  //     Author :
-  //     Category :
-  //     Image :
-  //     Price :
-  //     Title :
-  // },
+  {
+      Author :"Raven Kennedy",
+      Category :"Romantic",
+      Image :"./images/glow.webp",
+      Price :"855",
+      Title : "Glow",
+  },
+  {
+      Author :" Jaqueline Snowe",
+      Category :"Romantic",
+      Image :"./images/from the top.webp",
+      Price :"1000",
+      Title :" From the Top",
+  },
+  {
+      Author :"Ali Hazelwood",
+      Category : "Romantic",
+      Image : "./images/loveonthebrain.webp",
+      Price :"399",
+      Title :" Love on the Brain",
+  },
+  {
+      Author :" Lucy Score",
+      Category :"Romantic",
+      Image :"./images/thingswe.webp",
+      Price : "799",
+      Title : " Things We Never Got Over",
+  },
+  {
+      Author :"Silvia Moreno-Garcia",
+      Category :"Horror",
+      Image : "./images/mexican.jpg",
+      Price :"988",
+      Title :"Mexican Gothic",
+  },
+  {
+      Author :" Mona Awad",
+      Category : "Horror",
+      Image :"./images/bunny.jpg",
+      Price :"750",
+      Title :"Bunny",
+  },
+  {
+      Author : "Stephen King",
+      Category :"Horror",
+      Image : "./images/stephen2.jpg",
+      Price :"899",
+      Title : "If It Bleeds",
+  },
+  {
+    Author :" Stephen King",
+    Category :"Horror",
+    Image :"./images/stephen king.jpg",
+     Price :"1189",
+     Title :"The Outsider",
+
+  },
+  {
+    Author :" Stephen Chbosky",
+    Category :"Horror",
+    Image :"./images/imaginary friend.jpg",
+     Price : "555",
+    Title :"Imaginary Friend",
+  },
+  {
+    Author :"James Patterson",
+    Category :"Mystery",
+    Image :"./images/Deadly Cross.webp",
+     Price :"559",
+    Title : "Deadly Cross",
+  },
+  {
+    Author :" David Baldacci",
+    Category :"Mystery",
+    Image : "./images/Daylight.webp",
+     Price :"956",
+    Title : "Daylight",
+  },
+  {
+    Author : " Michael Connelly",
+    Category :"Mystery",
+    Image :"./images/The Law of Innocence.webp",
+     Price :"699",
+    Title : "The Law of Innocence",
+  },
+  {
+    Author :"John Grisham",
+    Category :"Mystery",
+    Image :"./images/A Time for Mercy.jpeg",
+     Price :"1299",
+    Title :"A Time for Mercy",
+  },
+  {
+    Author :"Anthony Horowitz",
+    Category :"Mystery",
+    Image :"./images/Moonflower Murders.jpeg",
+     Price :"899",
+    Title : "Moonflower Murders",
+  },
+  {
+    Author :" Sylvia Nasar",
+    Category :"Biography",
+    Image : "./images/A Beautiful Mind.jpg",
+    Price :"555",
+    Title : "A Beautiful Mind",
+   },
+   {
+    Author :"Ron Chernow",
+    Category :"Biography",
+    Image :"./images/Alexander Hamilton.jpg",
+    Price : "899",
+    Title :" Alexander Hamilton",
+   },
+   {
+    Author :"Sonia Nazario",
+    Category :"Biography",
+    Image :"./images/Enrique's Journey.jpg",
+    Price :"799",
+    Title :"Enrique's Journey",
+   },
+   {
+    Author : "Hayden Herrera",
+    Category : "Biography",
+    Image :"./images/Frida.jpg",
+    Price : "699",
+    Title :"Frida: A Biography of Frida Kahlo",
+   },
+   {
+    Author :" Jon Krakauer",
+    Category :"Biography",
+    Image : "./images/Into the Wild.jpg",
+    Price :"1599",
+    Title :" Into the Wild ",
+   },
 ];
 // Store the array of objects in localStorage
 localStorage.setItem("arr", JSON.stringify(arr));
