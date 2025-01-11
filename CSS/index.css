@@ -58,8 +58,10 @@ a{
     border: 0px;
     display: flex;
     align-items: center;
-   
+   border: none;
+   outline: none;
     margin-right: -4.8rem;
+    padding-left: 1rem;
 }
 ::placeholder{ 
     padding-left: 1.5em;
