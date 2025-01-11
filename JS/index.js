@@ -291,7 +291,7 @@ function getBooks() {
 }
 function popup() {
   console.log("press");
-  var loginForm = document.getElementById("container2");
+  let loginForm = document.getElementById("container2");
   if (loginForm.style.display === "none") {
     loginForm.style.display = "flex"; // Show the form
     // } else {
@@ -317,7 +317,7 @@ function validatation() {
   }
 
   if (username.value === validUsername && password.value === validPassword) {
-    alert("login successful");
+    
     // window.open("../addBook.html");
     return true;
   } else {
@@ -354,22 +354,25 @@ displayBooks();
 
 const loginButton = document.getElementById('button');
 const manageOption = document.getElementById('manage');
-
+ 
 // Simulated login state
 let isAdmin = false;
 
 loginButton.addEventListener('click' , () => {
-  if(!isAdmin){
+  if(isAdmin=validatation()){
+    alert("login successful");
     // Simulate admin login
     isAdmin = true;
    // loginButton.textContent = 'Logout';
     manageOption.classList.remove('hidden');
+
   }
   else{
     // Simulate logout
     isAdmin = false;
    // loginButton.textContent = 'Login';
     manageOption.classList.add('hidden');
+
   }
 });
 
@@ -378,3 +381,10 @@ openBook.addEventListener('click', () =>{
   window.location.href= "./addBook.html"
 
 });
+// const loginDiv=document.getElementById("container2");
+// loginButton.addEventListener('click',()=>{ 
+// if(validatation()==='true'){ 
+//   loginDiv.classList.add('container2');
+// }
+// });
+

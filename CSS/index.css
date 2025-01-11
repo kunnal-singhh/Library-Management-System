@@ -35,6 +35,9 @@ a{
 .hidden{
     display: none;
 }
+/* .container2{ 
+    display: none;
+} */
 #manage{
     align-items: center;
     color: white;
