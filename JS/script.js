@@ -31,7 +31,7 @@ function addBooks()
 }
  
     function getBooks() {
-        const books = localStorage.getItem("books");
+        const books = localStorage.getItem("arr");
         try {
           return books ? JSON.parse(books) : [];
         } catch (e) {
@@ -42,7 +42,7 @@ function addBooks()
 
 function saveBooks(books)
 { 
-    localStorage.setItem("books",JSON.stringify(books));
+    localStorage.setItem("arr",JSON.stringify(books));
 }
 function displayTable() {
     const books = getBooks();

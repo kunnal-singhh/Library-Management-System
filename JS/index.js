@@ -143,35 +143,35 @@ let arr = [
   },
   {
     Author: "James Clear",
-    Category: "Self-help book",
+    Category: "Self-help",
     Image: "./images/atomic habit.jpg",
     Price: "579",
     Title: "Atomic Habits",
   },
   {
     Author: "Brianna Wiest",
-    Category: "Self-help book",
+    Category: "Self-help",
     Image: "./images/The Mountain Is You.jpg",
     Price: "260",
     Title: "The Mountain Is You",
   },
   {
     Author: "Catherine Gildiner",
-    Category: "Self-help book",
+    Category: "Self-help",
     Image: "./images/Good Morning Monster.jpg",
     Price: "2000",
     Title: "Good Morning Monster",
   },
   {
     Author: "Napoleon Hill",
-    Category: "Self-help book",
+    Category: "Self-help",
     Image: "./images/think and grow rich.jpg",
     Price: "408",
     Title: "Think and Grow Rich",
   },
   {
     Author: "Morgan Housel",
-    Category: "Self-help book",
+    Category: "Self-help",
     Image: "./images/The Psychology of Money.jpg",
     Price: "410",
     Title: "The Psychology of Money",
@@ -185,7 +185,7 @@ let arr = [
   },
   {
     Author: "Jennie Allen",
-    Category: "Self-help book",
+    Category: "Self",
     Image: "./images/get out of your head.jpg",
     Price: "950",
     Title: "Get Out of Your Head",
@@ -244,10 +244,10 @@ let arr = [
 localStorage.setItem("arr", JSON.stringify(arr));
 
 // Retrieve the array of objects from localStorage
-const storedArray = JSON.parse(localStorage.getItem("arr"));
+// const storedArray = JSON.parse(localStorage.getItem("arr"));
 
 // Accessing objects from the retrieved array
-console.log(storedArray);
+// console.log(storedArray);
 
 function displayBooks() {
   const books = getBooks();
@@ -281,7 +281,7 @@ function displayBooks() {
 
 
 function getBooks() {
-  const books = localStorage.getItem("books");
+  const books = localStorage.getItem("arr");
   try {
     return books ? JSON.parse(books) : [];
   } catch (e) {
@@ -317,7 +317,8 @@ function validatation() {
   }
 
   if (username.value === validUsername && password.value === validPassword) {
-    
+    const loginDiv=document.getElementById("container2");
+    loginDiv.style.display = "none";
     // window.open("../addBook.html");
     return true;
   } else {
@@ -350,7 +351,7 @@ function saveBorrowed(borrowed)
 
 // Call functions
 displayBooks();
-// displayCategory();
+
 
 const loginButton = document.getElementById('button');
 const manageOption = document.getElementById('manage');
@@ -381,10 +382,48 @@ openBook.addEventListener('click', () =>{
   window.location.href= "./addBook.html"
 
 });
-// const loginDiv=document.getElementById("container2");
-// loginButton.addEventListener('click',()=>{ 
-// if(validatation()==='true'){ 
-//   loginDiv.classList.add('container2');
-// }
-// });
 
+
+// Select all li elements
+const catItem = document.querySelectorAll('.catItem li');
+const bookCat=document.querySelector('.bookCat');
+// Function to handle the click event
+function handleClick(event) {
+  const value = event.target.innerHTML; // Get the inner HTML content
+   bookCat.innerHTML=value;
+  const books = getBooks();
+  const bookList = document.querySelector(".bookList"); // Use querySelector for a single element
+  if (!bookList) {
+    console.error("bookList element not found");
+    return;
+  }
+  bookList.innerHTML = ""; // Clear previous content
+
+  if (books.length === 0) {
+    bookList.innerHTML = "<p>No books available</p>";
+  } else {
+    const fragment = document.createDocumentFragment();
+    books.forEach((book, index) => {
+      if(book.Category===value){
+      const bookItem = document.createElement("div");
+      bookItem.classList.add("book-list-item");
+      bookItem.innerHTML = `
+                <img src="${book.Image}" alt="${book.Title} cover">
+                <h3 class="book-title">${book.Title}</h3>
+                <h2 class="book-author">> ${book.Author}</h2>
+                <h3 class="book-price"> ₹ ${book.Price}</h3>
+                <button class="borrow" onclick="borrow(${index})">Borrow</button>
+                 
+            `;
+      fragment.appendChild(bookItem);
+      }
+    });
+    bookList.appendChild(fragment); // Append all items at once
+  }
+
+}
+
+// Add event listener to each li element
+catItem.forEach(item => {
+  item.addEventListener('click', handleClick);
+});
