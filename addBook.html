@@ -18,6 +18,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="navbar">
+        <a href="#" class="logo"><img src="./Images/libraryLogo.png" /></a>
+        
+      <a href="./index.html" class="nav">Home</a>
+      <a href="./contact.html" class="nav">Contact Us</a>
+      <a href="./aboutUs.html" class="nav">About Us</a>
+      <a href="./index.html" class="nav">Logout</a>
+      
+      <input type="text" placeholder="search books" class="srchBox" />
+      <button class="bt1">Search</button>
+      </header>
     <h1 class="head1">Add Books To The collection</h1>
     <div class="container">
         
@@ -40,7 +51,7 @@
                 <option>Biography</option>
             </select></label>
            
-           <button class="bt1" onclick="addBooks()">Add Book</button>
+           <button class="bt2" onclick="addBooks()">Add Book</button>
            </div>
         </div>
         <h2 class="head2">Added Books</h2>
@@ -76,10 +87,10 @@
                
             </table>
         </div>
-        <div class="logout-container">
-            <button id="logout-button" class="logout-button" onclick="logout()">Logout</button>
-        </div>
+      
     </div>
+    <button id="backToBottom" >&darr;</button>
+    <footer>&copy;2024 Harsh | Kunal</footer>
     <script src="./JS/script.js"></script>
 </body>
 </html>

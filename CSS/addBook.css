@@ -6,6 +6,72 @@
 body{ 
     background-color: white;
 }
+header{ 
+    background-color:rgb(0, 93, 93);
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0 0 4px black;
+    /* padding: 0 20px; */
+    align-items: center;
+    gap: 2rem;
+    z-index: 100;
+}
+a{ 
+    text-decoration: none;
+} 
+.logo{ 
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+.logo img{ 
+    width: 10rem;
+}
+
+.nav{ 
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    margin-right: -3rem;
+}
+.srchBox{ 
+    width: 19rem;
+    height: 1.8rem;
+    margin-top: .1rem;
+    border-radius: 15px;
+    border: 0px;
+    display: flex;
+    align-items: center;
+   border: none;
+   outline: none;
+    margin-right: -4.8rem;
+    padding-left: 1rem;
+}
+.srchBox ::placeholder{ 
+    padding-left: 1.5em;
+}
+.bt1{ 
+    text-align: center;
+    font-size: .8rem;
+    height: 1.8rem;
+    width: 6rem;
+    margin-top: .1rem;
+    border-radius: 15px;
+   margin-left: -10.1rem;
+   border: .2px solid white;
+    color: white;
+    background-color: rgb(0, 93, 93);
+    box-shadow: 0 0 2px rgb(78, 78, 78);
+    margin-right: 3rem;
+   
+}
+.bt1:hover{ 
+    background-color: rgb(2, 64, 64);
+}
 .head1{ 
     font-family: "Merienda", serif;
     text-align: center;
@@ -15,8 +81,10 @@ body{
     margin-right: auto;
     padding: .2rem 2rem .2rem 2rem;
 border-radius: 15px;
-    background-color:rgb(0, 93, 93); 
-    color: white;
+    /* background-color:rgb(0, 93, 93);  */
+    color: black;
+    border-bottom: 1px solid teal;
+    border-top: 1px solid teal;
 }
 .container{
     display: flex;
@@ -70,7 +138,7 @@ label{
     font-size: 1.2rem;
    
 }
-input,select{ 
+.formEle input,select{ 
     float:right;
     width: 13rem;
     height: 1.3rem;
@@ -82,7 +150,7 @@ input,select{
 option{ 
     text-align: center;
 }
-.bt1{ 
+.bt2{ 
     border-radius: 5px;
     border: 0px;
     box-shadow: 0 0 2px black;
@@ -96,22 +164,25 @@ border-radius: 15px;
     color: white;
    margin-top: 1rem;
 }
-.bt1:hover{ 
+.bt2:hover{ 
     background-color: rgb(2, 64, 64);
 }
 .head2{ 
     font-family: "Merienda", serif;
+    font-size: 2rem;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
     padding: .2rem 2rem .2rem 2rem;
-border-radius: 20px;
- background-color:rgb(0, 93, 93); 
-color: white;
+border-radius: 15px;
+ /* background-color:rgb(0, 93, 93);  */
+ color: black;
+ border-bottom: 1px solid teal;
+    border-top: 1px solid teal;
 }
-::placeholder{ 
+.formEle::placeholder{ 
     padding-left: .7rem;
 }
 
@@ -136,10 +207,11 @@ font-weight: 600;
 }
 td{ 
     width: 20%;
-    padding: .3rem .5rem .3rem .5rem;
+    padding: .2rem .3rem ;
 text-align: center;
 border-radius: 5px;
 box-shadow: 0 0 2px rgb(83, 143, 143);
+min-height: 8rem;
 
 
 }
@@ -149,11 +221,13 @@ box-shadow: 0 0 2px rgb(83, 143, 143);
 }
 .editAndDelete {
     display: flex;
+    flex-direction: column;
     justify-content: center; /* Horizontal centering */
     align-items: center; /* Vertical centering */
-    gap: 1rem; /* Space between buttons */
+    gap: 1.3rem; /* Space between buttons */
     width: auto;
-    min-height: 6rem;
+   
+
 }
 
 .delete-button, .edit-button {
@@ -174,38 +248,44 @@ box-shadow: 0 0 2px rgb(83, 143, 143);
 .delete-button {
     background-color: rgb(255, 92, 92);
 }
-
-.logout-container {
-    position: absolute;
-    margin-top: -5rem;
-    margin-left:1400px;
-   
+footer{ 
     text-align: center;
-    border-radius: 20px;
-    background-color:rgb(0, 93, 93); 
+    background-color:rgb(0, 93, 93);
+    height: 2.5rem;
+    padding-top: 1.5rem;
     color: white;
+   
 }
+#backToBottom {
    
-.logout-button {
-   
-    width: fit-content;
-    padding: 10px 20px;
-    font-size: 16px;
+    
+
+
+    position: fixed;
+     width: 3rem;
+    height: 3rem;
+    bottom: 60px;
+    display: none; 
+    right: 8px;
+    background-color:rgb(2, 175, 175);
     color: white;
-    background-color:rgb(0, 93, 93); 
     border: none;
-     border-radius: 20px; 
+    border-radius: 50%;
+    padding: 10px 15px;
     cursor: pointer;
-    width: fit-content;
-    transition: background-color 0.3s, transform 0.2s;
-}
-.logout-button:hover {
-    background-color: rgb(2, 64, 64);
-    transform: scale(1.1);
-}
-.logout-button:active {
-    transform: scale(1.05);
-}
+    font-size: 1.2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+    z-index: 100;
+  }
+  
+  #backToBottom:hover {
+    background-color:rgb(0, 149, 149);
+  }
+
+
+   
+
    
     
 

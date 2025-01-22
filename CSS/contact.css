@@ -1,22 +1,113 @@
+*{ 
+   margin: 0;
+  padding: 0;
+}
 body {
     font-family: "Poppins", serif;
-  margin: 0;
-  padding: 0;
+    background-color: #f4f4f9;
+}
+header{ 
+  background-color:rgb(0, 93, 93);
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  position: sticky;
+  top: 0px;
+  box-shadow: 0 0 4px black;
+  /* padding: 0 20px; */
+  align-items: center;
+  gap: 2rem;
+  z-index: 100;
+}
+a{ 
+  text-decoration: none;
+} 
+.logo{ 
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+.logo img{ 
+  width: 10rem;
+}
+.hidden{
+  display: none;
+}
+/* .container2{ 
+  display: none;
+} */
+#manage{
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+}
+
+.nav{ 
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  margin-right: -3rem;
+}
+.srchBox{ 
+  width: 19rem;
+  height: 1.8rem;
+  margin-top: .1rem;
+  border-radius: 15px;
+  border: 0px;
+  display: flex;
+  align-items: center;
+ border: none;
+ outline: none;
+  margin-right: -4.8rem;
+  padding-left: 1rem;
+}
+.srchBox ::placeholder{ 
+  padding-left: 1.5em;
+}
+.bt1{ 
+  text-align: center;
+  font-size: .8rem;
+  height: 1.8rem;
+  width: 6rem;
+  margin-top: .1rem;
+  border-radius: 15px;
+ margin-left: -9.9rem;
+ border: .2px solid white;
+  color: white;
+  background-color: rgb(0, 93, 93);
+  box-shadow: 0 0 2px rgb(78, 78, 78);
+  margin-right: 3rem;
+ 
+}
+.bt1:hover{ 
+  background-color: rgb(2, 64, 64);
 }
 
 .contact-section {
-  background-color: #f4f4f9;
-  padding: 3px;
+ 
+  margin-top: 1rem;
 }
 
 .contact-header {
+  margin-top: 1.5rem;
   text-align: center;
   margin-bottom: 18px;
+  
+  
 }
 
 .contact-header h1 {
+  margin-bottom: 15px;
   color: #333;
   font-family: "Merienda", serif;
+  border-bottom: 1px solid teal;
+  border-top: 1px solid teal;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .1rem 2rem .1rem 2rem;
+border-radius: 15px;
 }
 
 .contact-container {
@@ -35,6 +126,9 @@ body {
   flex: 1 1 300px;
   max-width: 400px;
   text-align: center;
+}
+.contact-info h2{ 
+  margin-bottom: 1.3rem;
 }
 .contact-form{ 
     background-color: #fff;
@@ -83,15 +177,20 @@ body {
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
+  margin: 2rem auto;
   width: 90%;
   max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: 8px;
+  height: 9rem;
 }
 .social-icons{ 
 display: flex;
 justify-content: center;
 gap: 2rem;
+margin: .7rem 0;
 
 }
 .social-icons a{ 
@@ -109,8 +208,16 @@ width: 1.9rem;
 .twit{ 
 width: 1.9rem;
 }
-.logo{ 
+#logo{ 
 width: 8rem;
 margin-top: 2rem;
 background-color: teal;
+}
+footer{ 
+  text-align: center;
+  background-color:rgb(0, 93, 93);
+  height: 2.5rem;
+  padding-top: 1.5rem;
+  color: white;
+ 
 }

@@ -40,7 +40,7 @@ let arr = [
     Category: "Non-Fiction",
     Image: "./images/framed.jpeg",
     Price: "990",
-    Title: "Framed: Astonishing True Stories of Wrongful Convictions",
+    Title: "Framed",
   },
   {
     Author: " Mel Robbins",
@@ -48,7 +48,7 @@ let arr = [
     Image: "./images/The let them theory.jpeg",
     Price: "1129",
     Title:
-      "The Let Them Theory: A Life-Changing Tool That Millions of People Can't Stop Talking About",
+      "The Let Them Theory",
   },
   {
     Author: "Alex van Halen",
@@ -62,7 +62,7 @@ let arr = [
     Category: "Non-Fiction",
     Image: "./images/the house of my mother.jpeg",
     Price: "399",
-    Title: "The House of My Mother: A Daughter's Quest for Freedom",
+    Title: "The House of My Mother",
   },
   {
     Author: "By Truman Capote",
@@ -185,7 +185,7 @@ let arr = [
   },
   {
     Author: "Jennie Allen",
-    Category: "Self",
+    Category: "Self-help",
     Image: "./images/get out of your head.jpg",
     Price: "950",
     Title: "Get Out of Your Head",
@@ -402,8 +402,8 @@ function validatation() {
   }
 
   if (username.value === validUsername && password.value === validPassword) {
-    const loginDiv=document.getElementById("container2");
-    loginDiv.style.display = "none";
+    // const loginDiv=document.getElementById("container2");
+    // loginDiv.style.display = "none";
     // window.open("../addBook.html");
     return true;
   } else {
@@ -451,6 +451,8 @@ loginButton.addEventListener('click' , () => {
     isAdmin = true;
    // loginButton.textContent = 'Logout';
     manageOption.classList.remove('hidden');
+    const loginDiv=document.getElementById("container2");
+    loginDiv.style.display = "none";
 
   }
   else{
@@ -512,5 +514,28 @@ function handleClick(event) {
 catItem.forEach(item => {
   item.addEventListener('click', handleClick);
 });
+// back to top---------------------------------
+document.addEventListener('DOMContentLoaded', () => {
+  const backToTop = document.getElementById('backToTop');
+  backToTop.innerHTML="&#8593";
+
+  // Show the button when scrolling down
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 250) { 
+      backToTop.style.display = 'block';
+    } else {
+      backToTop.style.display = 'none';
+    }
+  });
+
+  // Scroll to the top when the button is clicked
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});
+
 
 
