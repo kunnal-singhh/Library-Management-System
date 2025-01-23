@@ -138,14 +138,24 @@ label{
     font-size: 1.2rem;
    
 }
-.formEle input,select{ 
+.formEle input{ 
+    float:right;
+    width: 12.5rem;
+    height: 1.3rem;
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 0 0 2px rgb(80, 80, 255);
+   outline-style: none;
+   padding-left: .5rem;
+}
+.formEle select{ 
     float:right;
     width: 13rem;
     height: 1.3rem;
     border-radius: 5px;
     border: 0px;
     box-shadow: 0 0 2px rgb(80, 80, 255);
-   
+   outline-style: none;
 }
 option{ 
     text-align: center;
@@ -182,8 +192,8 @@ border-radius: 15px;
  border-bottom: 1px solid teal;
     border-top: 1px solid teal;
 }
-.formEle::placeholder{ 
-    padding-left: .7rem;
+input::placeholder{ 
+    padding-left: .5rem;
 }
 
 .bookTable{ 

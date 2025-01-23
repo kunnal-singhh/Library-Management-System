@@ -379,11 +379,17 @@ function popup() {
   let loginForm = document.getElementById("container2");
   if (loginForm.style.display === "none") {
     loginForm.style.display = "flex"; // Show the form
-    // } else {
-    //   loginForm.style.display = "none"; // Hide the form
-    // }
   }
+  
+  
 }
+// function popout(){ 
+//   let loginLink=document.querySelector('# login-link');
+  
+//     if(loginLink.style.display==="flex"){
+//     loginLink.style.display = "none"
+//     }
+// }
 
 let username = document.getElementById("username");
 let password = document.getElementById("password");
@@ -392,6 +398,7 @@ let validUsername = "admin";
 let validPassword = "admin@12345";
 
 function validatation() {
+  
   if (username.value === "") {
     alert("username cannot be empty");
     return false;
@@ -444,7 +451,8 @@ const manageOption = document.getElementById('manage');
 // Simulated login state
 let isAdmin = false;
 
-loginButton.addEventListener('click' , () => {
+loginButton.addEventListener('click' , function(event) {
+  event.preventDefault();
   if(isAdmin=validatation()){
     alert("login successful");
     // Simulate admin login

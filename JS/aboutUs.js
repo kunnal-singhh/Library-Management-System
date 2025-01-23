@@ -40,7 +40,8 @@ const manageOption = document.getElementById('manage');
 // Simulated login state
 let isAdmin = false;
 
-loginButton.addEventListener('click' , () => {
+loginButton.addEventListener('click' , function(event) {
+  event.preventDefault();
   if(isAdmin=validatation()){
     alert("login successful");
     // Simulate admin login
