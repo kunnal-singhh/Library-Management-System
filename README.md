@@ -1,5 +1,9 @@
 Library Management System <br> This is the first small beginner project created by Kunal Singh and Harsh Maurya.<br>
-Below, i have provided the working of this project in a small video.<br>
+Below, I have included the work of this project in a small video for you to take a look at.<br>
 
-https://github.com/user-attachments/assets/a32d542d-fc27-47e5-ad3e-df46b49c4da9
+
+
+
+
+https://github.com/user-attachments/assets/db4845ad-19c2-478f-82d6-bf5c624425e5
 
