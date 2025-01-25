@@ -518,32 +518,32 @@ function handleClick(event) {
 
 }
 
-// Add event listener to each li element
+//Add event listener to each li element
 catItem.forEach(item => {
   item.addEventListener('click', handleClick);
 });
-// back to top---------------------------------
-document.addEventListener('DOMContentLoaded', () => {
-  const backToTop = document.getElementById('backToTop');
-  backToTop.innerHTML="&#8593";
+// // back to top---------------------------------
+// document.addEventListener('DOMContentLoaded', () => {
+//   const backToTop = document.getElementById('backToTop');
+//   backToTop.innerHTML="&#8593";
 
-  // Show the button when scrolling down
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 250) { 
-      backToTop.style.display = 'block';
-    } else {
-      backToTop.style.display = 'none';
-    }
-  });
+//   // Show the button when scrolling down
+//   window.addEventListener('scroll', () => {
+//     if (window.scrollY > 250) { 
+//       backToTop.style.display = 'block';
+//     } else {
+//       backToTop.style.display = 'none';
+//     }
+//   });
 
-  // Scroll to the top when the button is clicked
-  backToTop.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-});
+//   // Scroll to the top when the button is clicked
+//   backToTop.addEventListener('click', () => {
+//     window.scrollTo({
+//       top: 0,
+//       behavior: 'smooth'
+//     });
+//   });
+// });
 
 
 

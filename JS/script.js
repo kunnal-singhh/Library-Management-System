@@ -1,3 +1,5 @@
+
+
 function addBooks()
 {  
     
@@ -134,29 +136,5 @@ const logout= document.getElementById('logout-button');
 logout.addEventListener('click',() => {
     window.location.href= "./index.html" ;
 });
-//back to bottom
-document.addEventListener('DOMContentLoaded', () => {
-    const backToBottom = document.getElementById('backToBottom');
-  
-  
-    // Show the button when scrolling down
-    window.addEventListener('scroll', () => {
-      const scrollPosition = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight;
-      if (scrollPosition < documentHeight - windowHeight - 200) { 
-        backToBottom.style.display = 'block';
-      } else {
-        backToBottom.style.display = 'none';
-      }
-    });
-  
-    // Scroll to the top when the button is clicked
-    backToBottom.addEventListener('click', () => {
-      window.scrollTo({
-        top: document.documentElement.scrollHeight,
-        behavior: 'smooth'
-      });
-    });
-  });
-  
+
+
