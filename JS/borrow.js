@@ -1,4 +1,5 @@
 
+
   function displayBorrowed() {
     const borrowedBooks = getBorrowed();
     const borrowedContainer = document.querySelector(".borrowed");
@@ -13,22 +14,40 @@
   
     if (borrowedBooks.length === 0) {
       borrowedContainer.innerHTML = "<p>No books borrowed yet!</p>";
+    
+     
     } else {
+     
       const fragment = document.createDocumentFragment();
-      borrowedBooks.forEach((book) => {
+      borrowedBooks.forEach((book,index) => {
         const bookItem = document.createElement("div");
         bookItem.classList.add("book-item");
         bookItem.innerHTML = `
+        
             <img src="${book.Image}" alt="${book.Title} cover">
             <h3 class="book-title">${book.Title}</h3>
             <h2 class="book-author">> ${book.Author}</h2>
-            <h3 class="book-price">₹ ${book.Price}</h3>
-            <p class="borrowedMsg">Thanks for borrowing the book!</p>
+            <h3 class="book-price">₹ ${book.Price}  <button class="delete" onclick = deleteBook(${index})> ✖</button></h3>
+           
+    
+       
         `;
         fragment.appendChild(bookItem);
       });
       borrowedContainer.appendChild(fragment);
+    } 
+  }
+  function deleteBook(index)
+  { 
+    const borrowedBooks = getBorrowed();
+    borrowedBooks.splice(index,1);
+    if(borrowedBooks.length===0){ 
+      placeOrder=document.querySelector('.place_order');
+        placeOrder.style.display="none";
+      location.reload();
     }
+    saveBorrowed(borrowedBooks);
+    displayBorrowed();
   }
   function getBorrowed()
 { 
@@ -44,3 +63,10 @@ function saveBorrowed(borrowed)
   document.addEventListener("DOMContentLoaded", () => {
     displayBorrowed();
   });
+
+  let order=getBorrowed();
+if(order.length===0)
+{ 
+  placeOrder=document.querySelector('.place_order');
+  placeOrder.style.display="none";
+}

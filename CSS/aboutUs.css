@@ -2,26 +2,29 @@
     margin: 0;
     padding: 0;
 }
+
 header{ 
     background-color:rgb(0, 93, 93);
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 4rem;
     position: sticky;
     top: 0px;
-    box-shadow: 0 0 4px black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
     /* padding: 0 20px; */
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     z-index: 100;
   }
   a{ 
     text-decoration: none;
   } 
   .logo{ 
-    display: flex;
+    /* display: block; */
     align-items: center;
     margin-left: 2rem;
+    margin-right: auto;
+    margin-top: .5rem;
   }
   .logo img{ 
     width: 10rem;
@@ -34,18 +37,18 @@ header{
   } */
   #manage{
     align-items: center;
-    color: white;
+    color: aquamarine;
     font-size: 1rem;
+    margin-right: 3rem;
   }
   
   .nav{ 
-    display: flex;
-    align-items: center;
+   
     color: white;
     font-size: 1rem;
-    margin-right: -3rem;
+    margin-right: 3rem;
   }
-  .srchBox{ 
+  /* .srchBox{ 
     width: 19rem;
     height: 1.8rem;
     margin-top: .1rem;
@@ -78,13 +81,23 @@ header{
   }
   .bt1:hover{ 
     background-color: rgb(2, 64, 64);
-  }
+  } */
+  .cart{ 
+ 
+    margin-right: 3rem;
+   font-size: 1rem;
+   margin-top: .3rem;
+}
+.cart img{ 
+    width: 35px;
+
+}
 body {
     font-family: "Poppins", serif;
     margin: 0;
     padding: 0;
     line-height: 1.7;
-    background-color: #f9f9f9;
+    background-color:white;
     color: #333;
 }
 .container {

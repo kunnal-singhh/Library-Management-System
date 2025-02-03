@@ -31,6 +31,8 @@ function validatation() {
     return true;
   } else {
     alert("login failed");
+    username.value="";
+    password.value="";
     return false;
   }
 }
@@ -57,7 +59,7 @@ loginButton.addEventListener('click' , function(event) {
     isAdmin = false;
    // loginButton.textContent = 'Login';
     manageOption.classList.add('hidden');
-
+  
   }
 });
 const openBook=document.getElementById('manage');

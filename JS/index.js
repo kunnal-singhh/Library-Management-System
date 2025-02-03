@@ -373,23 +373,26 @@ function getBooks() {
     console.error("Error parsing books from localStorage", e);
     return [];
   }
-}
+} 
+
+ let loginForm = document.getElementById("container2");
+// let count=0;
 function popup() {
   console.log("press");
-  let loginForm = document.getElementById("container2");
+
   if (loginForm.style.display === "none") {
     loginForm.style.display = "flex"; // Show the form
+    // count++;
   }
-  
-  
+   
 }
-// function popout(){ 
-//   let loginLink=document.querySelector('# login-link');
-  
-//     if(loginLink.style.display==="flex"){
-//     loginLink.style.display = "none"
-//     }
-// }
+// loginForm.addEventListener('click',()=>{
+//   if (count%2 === 0) {
+//       popup.style.display = "none";
+//   }
+// });
+
+
 
 let username = document.getElementById("username");
 let password = document.getElementById("password");
@@ -415,6 +418,8 @@ function validatation() {
     return true;
   } else {
     alert("login failed");
+    username.value="";
+    password.value="";
     return false;
   }
 }
@@ -425,9 +430,10 @@ function borrow(index) {
   // Add the selected book to the borrowed list
   borrowedBooks.push(books[index]);
   saveBorrowed(borrowedBooks);
+  alert("Added to cart");
 
   // Navigate to the next page to show borrowed books
-  window.location.href = "./borrow.html"; // Replace with the actual URL
+  // window.location.href = "./borrow.html"; // Replace with the actual URL
 }
 function getBorrowed()
 { 
